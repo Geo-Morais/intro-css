@@ -1,29 +1,100 @@
+/* seletor tag, onde selecionamos o elemento pelo seu nome dentro do html */
 h1 {
+  /* 
+  O RGB é um modelo de cores baseado na combinação das seguintes cores:
 
-    /* O RGB é um modelo de cores baseado na combinação das seguintes cores
-    
-    R: Red (Vermelho)
-    G: Green (Verde)
-    B: Blue (Azul)
+  R: Red(vermelho)
+  G: Green(verde)
+  B: Blue(azul)
 
-    Usamos esse modelo, pois ele é usado para representar cores em telas. Exemplo: Monitores, TVs, Celulares e Navegadores Web.
-    */
-    
-    color:red;
-    text-align: center;
+  Usamos esse modelo, pos ele é usado para representar cores em telas. 
+  Exemplo: Monitores, TVs, Celulares e navegadores
+  
+  */
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+/* usamos .(ponto final) para identificar uma class(classe) */
+.paragrafo-section {
+  color: gold;
 }
 
 p {
-    color: rgb(179, 42, 32);
-    text-align:justify;
+  color: rgb(255, 255, 255);
+  text-align: justify;
 }
 
-/* RGBA - Transparencia da cor */
 body {
-    background-color:rgba(255, 255, 255, 0.644);
+  background-color: rgb(14, 14, 14);
 }
 
-/* Usamos #(hashtag) para identificar o id (identificador) */
+/* Usamos #(hashtag) para identificar o id - identifier(identificador) */
 #paragrafo-footer {
-    text-align: center;
+  text-align: center;
+}
+
+section {
+  background-color: dodgerblue;
+}
+
+/* Seletor Descendente - Onde selecionamos todos os elementos que são descendentes do primeiro, ou seja, elementos filhos. */
+section h2 {
+  color: beige;
+  background-color: blueviolet;
+}
+
+body {
+  background-color: darkblue;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: yellowgreen;
+}
+
+header h1 {
+  background-color: lime;
+  width: 200px;
+  /* Para  deixar o texto minusculo */
+  text-transform: lowercase;
+
+  /* Para deixar o texto maiusculo */
+  text-transform: uppercase;
+
+  /* Para deixar a primeira letra de cada palavra maiuscula */
+  text-transform: capitalize;
+}
+
+main {
+  background-color: violet;
+}
+
+main section {
+  text-align: center;
+}
+
+main section p {
+  text-align: center;
+}
+
+section h2 {
+  /* padding-top: 20px; */
+  /* padding-left: 20px; */
+  /* padding-bottom: 20px; */
+  /* padding-right: 20px; */
+
+  /* shorthand - atalho*/
+
+  /* aplica em todas a direções (top, left, right, bottom) */
+  /* padding: 20px; */
+
+  /*  top/bottom | left/right   */
+  padding: 20px 10px;
+
+  /*    espessura / tipo de borda/ cor da borda  */
+  border: 3px solid black;
+
+  margin-top: 10px;
+  margin-left: 40px;
 }
